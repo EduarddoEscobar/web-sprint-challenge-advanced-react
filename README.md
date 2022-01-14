@@ -85,8 +85,8 @@ In this project, you will build the retrieve data from a public api, add in a fa
 ### Testing the Checkout Form
 * [x] Run the test runner and ensure that `src/components/CheckoutForm.test.js` is correctly called.
 * [x] Fill out code necessary to test that that Checkout form renders without errors.
-* [ ] Fill out code necessary to test that when all form inputs are filled with valid data, a success message appears.
-* [ ] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working.
+* [x] Fill out code necessary to test that when all form inputs are filled with valid data, a success message appears.
+* [x] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working.
 
 ## Important Notes:
 * Again, unlike other projects, the local server used here can not be accessed through the browser. For this and the rest of your sprint challenges, test the functioning of the server directly through your axios calls.
@@ -117,9 +117,12 @@ test("displays plants in cart", () => {
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below.
 
 1. What are the main differences between a class-based and a functional component?
-
+    The main differences are the this keyword and the life-cycle of a class-based component.
 2. When does a componentWillMount function be called? What about a componentDidUpdate?
-
+    A componentWillMount function will be called when you want to make an api call and/or configure state once the component is initialized. A componentDidUpdate function will be called when you want to call another function/block of code after state has been altered.
 3. Define stateful logic.
-
-4. What are the three step of creating a successful test? What is done in each phase? 
+    Stateful logic is the logic that is built into the component that deals with state such as event handler functions or functions that format data.
+4. What are the three step of creating a successful test? What is done in each phase?
+    Arrange: Where you render all that is needed to test.
+    Act: Where you get/use all the elements from the DOM that you need to.
+    Assert: Where you are testing if elements are in the DOM or if values are correct or any other test that needed.
