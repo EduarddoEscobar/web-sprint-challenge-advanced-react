@@ -5,7 +5,6 @@ const useForm = (initValues) => {
     const [values, setValues] = useState(initValues);
 
     const handleChanges = (e) => {
-        console.log(values);
         setValues({ ...values, [e.target.name]: e.target.value });
     };
 
